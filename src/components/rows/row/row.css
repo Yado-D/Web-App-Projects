@@ -1,0 +1,23 @@
+.row_outer_container h1 {
+  font-size: 20px;
+  color: white;
+  overflow-x: hidden;
+  margin:20px;
+}
+.row_inner_container {
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 20px;
+
+  scrollbar-width: none;
+}
+.row_image{
+  margin-right: 10px;
+   transition:ease 1000ms;
+   object-fit: cover;
+   border-radius: 10px;
+}
+.row_image:hover{
+     transform: scale(1.07);
+}

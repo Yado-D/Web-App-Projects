@@ -1,0 +1,89 @@
+.footer_inner_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+}
+.footer_icons {
+  display: flex;
+  justify-content: left; /* center icon row */
+  padding: 20px 0;
+  color: white;
+}
+
+.footer_icons ul {
+  display: flex;
+  gap: 18px;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+.footer_icons ul li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Scale icons slightly and keep them visually balanced */
+.footer_icons svg {
+  font-size: 28px; /* MUI icons respond to font-size */
+  color: white;
+}
+
+.footer_datas {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  padding: 20px 10px;
+  color: gray;
+  cursor: default;
+}
+
+.footer_datas > div {
+  /* ensure each column stacks its list vertically */
+}
+
+.footer_datas ul {
+  list-style: none;
+  line-height: 2.2;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_datas ul li {
+  cursor: pointer;
+}
+
+.footer_datas ul li:hover {
+  text-decoration: underline;
+}
+
+/* Responsive: show two columns on narrow/mobile screens */
+@media screen and (max-width: 600px) {
+  .footer_datas {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 16px 12px;
+    grid-gap: 12px;
+  }
+
+  .footer_icons svg {
+    font-size: 24px;
+  }
+}
+
+/* Slightly larger spacing for wide desktops */
+@media screen and (min-width: 1200px) {
+  .footer_icons {
+    padding: 28px 0;
+  }
+
+  .footer_datas {
+    grid-gap: 28px;
+    padding: 28px 40px;
+  }
+}
